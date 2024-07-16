@@ -8,8 +8,6 @@ import ChatSaga from './ChatSaga';
 const combinedSaga = [
   ...AuthSaga,
   ...UserSaga,
-  ...VehicleSaga,
-  ...BookingSaga,
   ...ChatSaga,
 ];
 
