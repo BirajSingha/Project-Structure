@@ -7,6 +7,7 @@ export async function getApi(url, header) {
       Accept: header.Accept,
       'Content-Type': header.contenttype,
       'x-access-token': header.accesstoken,
+      //  Authorization: `Bearer ${header.accesstoken ?? ''}`,
     },
   });
 }
@@ -21,6 +22,7 @@ export async function getApiWithParam(url, param, header) {
       Accept: header.Accept,
       'Content-type': header.contenttype,
       'x-access-token': header.accesstoken,
+      //  Authorization: `Bearer ${header.accesstoken ?? ''}`,
     },
   });
 }
@@ -31,6 +33,7 @@ export async function postApi(url, payload, header) {
       Accept: header?.Accept,
       'Content-Type': header?.contenttype,
       'x-access-token': header.accesstoken,
+      //  Authorization: `Bearer ${header.accesstoken ?? ''}`,
     },
   });
 }
